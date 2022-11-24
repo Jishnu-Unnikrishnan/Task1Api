@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 style="color: white; " class="text-center">{{user}}</h1>
+    <div class="row " >
+        <div class="col-lg-4" *ngFor="let users of userlist">
+            <div class="card card-margin">
+                <div class="card-header no-border">
+                    <h5 class="card-title">{{users.id}}</h5>
+                </div>
+                <div class="card-body pt-0">
+                    <div class="widget-49">
+                        <div class="widget-49-title-wrapper">
+                            <div class="widget-49-date-primary">
+                                <!-- <span class="widget-49-date-day">09</span>
+                                <span class="widget-49-date-month">apr</span> -->
+                                <img src="{{users.image}}" alt="" srcset="">
+                            </div>
+                            <div class="widget-49-meeting-info">
+                                <span class="widget-49-pro-title">{{users.firstName}}</span>
+                                <span class="widget-49-meeting-time">{{users.email}}</span>
+                            </div>
+                        </div>
+                        <ol>
+                            <li  >City:<span>{{users.address.city}}</span></li>
+                            <li >Phone NO:<span>{{users.phone}}</span></li>
+                        </ol>
+                        <div class="widget-49-meeting-action">
+                            <a href="details/{{users.id}}" class="btn btn-sm btn-flash-border-primary">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
